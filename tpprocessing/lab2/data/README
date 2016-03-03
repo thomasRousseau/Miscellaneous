@@ -1,0 +1,24 @@
+         #########################################
+         # TP lab1/2 INF229 2A Télécom Paristech #
+         # by Thomas Rousseau                    #
+         #########################################
+
+My software displays a map of France
+Most of the cities and towns are drawn, represented by a blue dot. The intensity of the color is proportionnal to the local population density.
+Blue transparent circles are drawn, proportional to the local population.
+
+Possible interactions :
+When hovering a city, the population circle turns red, and the name of the city is displayed just next to the mouse pointer.
+When clicking on a city, the general information about it are displayed on the bottom left part of the window (name, postal code, density and population)
+Clicking on a blank space with no city underneath will clear the part of the screen where information are usualy displayed
+At the bottom of the window is diplayed a sliding bar, enabling the user to restraint the cities displayed on the map by population, simply by sliding the left cursor (for the minimum population) and the right cursor (for the maximum population) with the mouse.
+The bar follow a logarithmic scale, highlighting the less populated towns.
+The same controls could be achieved using the keyboard :
+    O : decrease the maximum population
+    P : increase the maximum population
+    L : decrease the minimum population
+    M : increase the minimum population
+The population bounds are displayed on the screen just above the bar.
+And just over the bar is displayed an histogram showing the total amount of cities with such population
+When hovering a city, a red bar is drawn on that histogram to help you see where it is located on the population scale.
+Because of the huge delta on that histogram, not all cities are easily observable ...
